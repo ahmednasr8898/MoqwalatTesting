@@ -17,6 +17,10 @@
 		CD7BA3FD28355E0D00EE4ECB /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD7BA3FB28355E0D00EE4ECB /* MyCollectionViewCell.xib */; };
 		CD7BA40028356B8800EE4ECB /* ForgotPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7BA3FF28356B8800EE4ECB /* ForgotPassword.storyboard */; };
 		CD7BA40228356BA400EE4ECB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7BA40128356BA400EE4ECB /* ForgotPasswordViewController.swift */; };
+		CD82D5042837AF2900E7D85D /* VerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82D5032837AF2900E7D85D /* VerificationCodeViewController.swift */; };
+		CD82D5062837AF4300E7D85D /* VerificationCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD82D5052837AF4300E7D85D /* VerificationCode.storyboard */; };
+		CD82D5092837D51000E7D85D /* VerificationSuccess.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD82D5082837D51000E7D85D /* VerificationSuccess.storyboard */; };
+		CD82D50B2837D52300E7D85D /* VerificationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD82D50A2837D52300E7D85D /* VerificationSuccessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		CD7BA3FB28355E0D00EE4ECB /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		CD7BA3FF28356B8800EE4ECB /* ForgotPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForgotPassword.storyboard; sourceTree = "<group>"; };
 		CD7BA40128356BA400EE4ECB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		CD82D5032837AF2900E7D85D /* VerificationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationCodeViewController.swift; sourceTree = "<group>"; };
+		CD82D5052837AF4300E7D85D /* VerificationCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationCode.storyboard; sourceTree = "<group>"; };
+		CD82D5082837D51000E7D85D /* VerificationSuccess.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerificationSuccess.storyboard; sourceTree = "<group>"; };
+		CD82D50A2837D52300E7D85D /* VerificationSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationSuccessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,8 @@
 		CD7BA3E4283556C600EE4ECB /* moqwalat */ = {
 			isa = PBXGroup;
 			children = (
+				CD82D5072837D4CF00E7D85D /* VerificationSuccessController */,
+				CD82D5022837AE5D00E7D85D /* OTPPage */,
 				CD7BA3FE28356B6300EE4ECB /* ForgotPassword */,
 				CD7BA3F928355DF800EE4ECB /* cell */,
 				CD7BA3E5283556C600EE4ECB /* AppDelegate.swift */,
@@ -93,6 +103,24 @@
 				CD7BA40128356BA400EE4ECB /* ForgotPasswordViewController.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		CD82D5022837AE5D00E7D85D /* OTPPage */ = {
+			isa = PBXGroup;
+			children = (
+				CD82D5032837AF2900E7D85D /* VerificationCodeViewController.swift */,
+				CD82D5052837AF4300E7D85D /* VerificationCode.storyboard */,
+			);
+			path = OTPPage;
+			sourceTree = "<group>";
+		};
+		CD82D5072837D4CF00E7D85D /* VerificationSuccessController */ = {
+			isa = PBXGroup;
+			children = (
+				CD82D5082837D51000E7D85D /* VerificationSuccess.storyboard */,
+				CD82D50A2837D52300E7D85D /* VerificationSuccessViewController.swift */,
+			);
+			path = VerificationSuccessController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +181,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD82D5062837AF4300E7D85D /* VerificationCode.storyboard in Resources */,
+				CD82D5092837D51000E7D85D /* VerificationSuccess.storyboard in Resources */,
 				CD7BA3F2283556C900EE4ECB /* LaunchScreen.storyboard in Resources */,
 				CD7BA3EF283556C900EE4ECB /* Assets.xcassets in Resources */,
 				CD7BA40028356B8800EE4ECB /* ForgotPassword.storyboard in Resources */,
@@ -168,8 +198,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD82D5042837AF2900E7D85D /* VerificationCodeViewController.swift in Sources */,
 				CD7BA3EA283556C600EE4ECB /* ViewController.swift in Sources */,
 				CD7BA40228356BA400EE4ECB /* ForgotPasswordViewController.swift in Sources */,
+				CD82D50B2837D52300E7D85D /* VerificationSuccessViewController.swift in Sources */,
 				CD7BA3E6283556C600EE4ECB /* AppDelegate.swift in Sources */,
 				CD7BA3FC28355E0D00EE4ECB /* MyCollectionViewCell.swift in Sources */,
 				CD7BA3E8283556C600EE4ECB /* SceneDelegate.swift in Sources */,
@@ -249,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -304,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -329,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +390,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -10,6 +10,7 @@ import UIKit
 class MyCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var myView: UIView!
+    @IBOutlet weak var nameLabel: UILabel!
     static let id = "MyCollectionViewCell"
     static func Nib() -> UINib{
         return UINib(nibName: "MyCollectionViewCell", bundle: nil)

@@ -30,7 +30,22 @@ class ForgotPasswordViewController: UIViewController {
         print(self.view.bounds.height)
         setupConstraint()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: UIDevice.orientationDidChangeNotification, object: nil)
+        
     }
+
+    deinit {
+       NotificationCenter.default.removeObserver(self, name: UIDevice.orientationDidChangeNotification, object: nil)
+    }
+
+    @objc func rotated() {
+        if UIDevice.current.orientation.isLandscape {
+            print("Landscape")
+        } else {
+            print("Portrait")
+        }
+    }
+
     
     func setupConstraint(){
         let heightView = self.view.frame.height //812
